@@ -1,10 +1,5 @@
-// https://docs.expo.dev/guides/using-eslint/
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
+import { suma } from '../utils/suma';
 
-module.exports = defineConfig([
-  expoConfig,
-  {
-    ignores: ['dist/*'],
-  },
-]);
+test('suma correctamente', () => {
+  expect(suma(2, 3)).toBe(5);
+});
